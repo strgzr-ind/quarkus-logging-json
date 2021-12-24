@@ -10,7 +10,7 @@
     <groupId>io.quarkiverse.loggingjson</groupId>
     <artifactId>quarkus-logging-json-parent</artifactId>
     <name>Quarkus Logging JSON - Parent</name>
-    <version>1.1.2-SNAPSHOT</version>
+    <version>das-1.1.4</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -55,6 +55,19 @@
             <version>${jacoco.version}</version>
         </dependency>
     </dependencies>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus</id>
+            <name>Nexux local</name>
+            <url>https://nexus-dev.stargazer.com.sg/repository/dashur-local</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus</id>
+            <name>Nexux local</name>
+            <url>https://nexus-dev.stargazer.com.sg/repository/dashur-local</url>
+        </repository>
+    </distributionManagement>
 
     <build>
         <pluginManagement>
